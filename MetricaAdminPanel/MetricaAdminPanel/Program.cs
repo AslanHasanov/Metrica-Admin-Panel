@@ -11,7 +11,7 @@ namespace MetricaAdminPanel
             app.UseStaticFiles();
 
             app.MapControllerRoute(name: "Default",
-                pattern: "{controller}/{action}");
+                pattern: "{controller=analytics}/{action=index}");
 
             app.Run();
         }
